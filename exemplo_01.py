@@ -42,5 +42,5 @@ data = pd.read_csv('datasets/kc_house_data.csv')
 # print(df_filter['price'].min())
 
 #12. Quantas casas tem mais de 2 andares?
-df_filter = data['id', 'floor'].loc[data['floor'] == ]
+df_filter = data['id', 'floor'].loc[data['floor'] == 2]
 
