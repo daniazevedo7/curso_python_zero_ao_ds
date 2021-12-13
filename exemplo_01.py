@@ -21,7 +21,7 @@ data = pd.read_csv('datasets/kc_house_data.csv')
 #print(sum(data.bedrooms))
 
 # 7. Quantas casas possuem 2 banheiros?
-#df_filter = data[['id', 'bathrooms']].loc[data['bathrooms'] == 2]
+# df_filter = data[['id', 'bathrooms']].loc[data['bathrooms'] == 2]
 # num_houses = len(df_filter)
 # print(df_filter)
 # print('****',num_houses,'****')
@@ -33,7 +33,7 @@ data = pd.read_csv('datasets/kc_house_data.csv')
 #9. Qual o preço médio de casas com 2 banheiros?
 # df_filter = data[['id', 'bathrooms', 'price']].loc[data['bathrooms']== 2]
 # print(df_filter)
-#print(df_filter['price'].mean())
+# print(df_filter['price'].mean())
 
 #10. Qual o preço mínimo entre as casas com 3 quartos?
 # df_filter = data[['id','bedrooms', 'price']].loc[data['bedrooms']==3]
@@ -42,5 +42,6 @@ data = pd.read_csv('datasets/kc_house_data.csv')
 # print(df_filter['price'].min())
 
 #12. Quantas casas tem mais de 2 andares?
-df_filter = data['id', 'floor'].loc[data['floor'] == 2]
+df_filter = data[['id', 'floors']].loc[data['floors'] > 2]
+print(df_filter)
 
