@@ -24,7 +24,7 @@ def get_data( path ):
     return data
 
 # load data
-data = get_data( 'kc_house_data.csv' )
+data = get_data( '/home/daniel/repos/curso_python_zero_ao_ds/datasets/kc_house_data.csv' )
 
 # filter bedrooms
 bedrooms = st.sidebar.multiselect(
