@@ -23,7 +23,7 @@ def get_geofile( url ):
     return geofile
 
 # get data
-path = '../kc_house_data.csv'
+path = '/home/daniel/repos/curso_python_zero_ao_ds/datasets/kc_house_data.csv'
 data = get_data( path )
 
 # get geofile
